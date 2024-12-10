@@ -16,19 +16,19 @@ export default function ReadMore({ title, content, lines }) {
     const rects = Array.from(range.getClientRects())
     setTotalLines(rects.length);
 
-    if(rects.length < lines){
-      setIsMore(false)
-    }
   }, [content,lines])
 
   useEffect(() => {
-    if (lines && totalLines > lines) {
+    if(totalLines < lines){
+      setIsMore(false)
+    }
+
+    if (totalLines > lines) {
       setIsMore(true);
     }
+
     setIsLoading(false)
   }, [totalLines,lines])
-
-  console.log(totalLines)
 
 
   return (
