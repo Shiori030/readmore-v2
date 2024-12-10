@@ -1,0 +1,30 @@
+.readmore{
+  width: 50%;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  margin-inline: auto;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+}
+
+.button{
+  background-color: #0072E3;
+  color:#F0F0F0;
+  border: #0072E3 1px solid;
+  border-radius: 5px;
+  font-size: 20px;
+  padding-inline: 20px;
+  padding-block: 8px;
+}
+
+.button:hover{
+  background-color: #1e8fff;
+}
+
+.content{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+}
